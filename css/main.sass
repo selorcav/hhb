@@ -23,6 +23,37 @@ body
     margin: 0
     padding: 0
     font-family: sans-serif
+    color: $primary-blue
+
+h1, h2, h3, h4, h5, h6, p
+    font-family: $font-opensans
+
+//color-text
+
+.primary-blue
+    color: $primary-blue
+
+.secondary-blue
+    color: $secondary-blue
+
+.primary-lightblue
+    color: $primary-lightblue
+
+.secondary-lightblue
+    color: $secondary-lightblue
+
+.primary-orange
+    color: $primary-orange
+
+.secondary-orange
+    color: $secondary-orange
+
+.primary-white
+    color: $primary-white
+
+.secondary-white
+    color: $secondary-white
+
 /////
 //nav
 .primary-bg
@@ -34,10 +65,8 @@ body
         line-height: 80px
     
     a 
-        height: 80px
-        line-height: 80px
         &:hover
-            background: $secondary-blue
+            background: rgba(255,255 ,255 ,.1 )
 
 header
     position: fixed
@@ -114,13 +143,12 @@ header
                 +ipad-ipadpro
                     padding: 0 10px
                 +for-ipad
+                    height: 70px
+                    line-height: 70px
                     &:hover
                         background: $secondary-blue
     nav.active
         right: 0
-        a 
-            height: 80px
-            line-height: 80px
 
     .hamburger 
         display: inline-block
@@ -134,7 +162,6 @@ header
             right: 40px
             position: absolute
             top: 30px
-        
             &:after,
             &:before 
                 content: ''
@@ -146,7 +173,7 @@ header
                 left: 0
                 right: 0
                 transition: all ease-out 0.3s
-            
+
             &:after 
                 top: 100%
             
@@ -161,18 +188,16 @@ header
                 position: absolute
                 top: 50%
                 transition: all ease-out 0.1s
-                
+
             &.active-menu 
                 &:after 
                     transform: rotate(-45deg)
                     transform-origin: center
                     top: 50%
-                
                 &:before 
                     transform: rotate(45deg)
                     transform-origin: center
                     top: 50%
-                
                 i 
                     opacity: 0
 
@@ -199,7 +224,6 @@ main
         h1
             text-align: center
             color: $primary-white
-            font-family: $font-roboto
             font-family: $font-opensans
             font-weight: 700
             text-shadow: 1px 1px 1px #000000
@@ -211,7 +235,6 @@ main
             +for-phone-only
                 font-size: 1.5em
             
-    
         .button
             margin: 0 auto
             border-radius: 35px
@@ -231,7 +254,6 @@ main
             transform: translateZ(0)
             box-shadow: 0 0 1px rgba(0, 0, 0, 0)
             overflow: hidden
-        
             &:hover 
                 color: #fff
                 text-decoration: none
@@ -239,7 +261,6 @@ main
                 animation-duration: 0.3s
                 animation-timing-function: linear
                 animation-iteration-count: 1
-        
             &:after 
                 background: #fff
                 content: ""
@@ -258,9 +279,146 @@ main
                 left: 120%
                 transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1)
     
+//what-we-do
+.what-we-do
+    padding: 100px
+    background-size: cover
+    background-image: url("../img/services-bg.svg")
+    +for-ipad
+        padding: 50px
+    +for-phone-only
+        padding: 30px
 
-//services
-.services
-    height: 100vh
-    background: rgba(173, 173, 173, .5)
+    h1
+        font-weight: 700
+        font-size: 2em
+        &:before 
+            content: ''
+          
+    p
+        font-size: 1.2em
+        +ipad-ipadpro
+            font-size: 1em
+        +for-ipad
+            font-size: 1em
+            margin-top: 1em !important
+
+    .what-we-do-content
+        
+        .d-flex
+            +for-ipad 
+                display: block !important
+
+        .col-md-6
+            +for-phone-only
+                display: block !important
+
+            img
+                position: absolute
+
+            .floating
+                animation-name: floating
+                animation-duration: 3s
+                animation-iteration-count: infinite
+                animation-timing-function: ease-in-out
+            @keyframes floating
+                0%
+                    transform: translate(0,  0px)
+                65%
+                    transform: translate(0, -10px)
+                100%
+                    transform: translate(0, 0px)
+    .iot-img
+        +for-iphone-5s
+            height: 30vh
+            padding: 1em !important
+        +iphone-ipad
+            height: 380px
+        +for-iphone-x
+            height: 320px
+        +responsive-desk 
+            margin-bottom: 3em
+
+//propuesta de valor
+.value-proposal
+    h1
+        text-align: center
+    
+    //owl-carousel
+    .carousel-wrap 
+        margin: 0px auto
+        position: relative
+
+    .owl-carousel
+        .item 
+            position: relative
+            z-index: 100
+            border-radius: 15px
+            height: 400px
+            transition: .3s
+            h3
+                font-size: 1.35em
+                padding: 0 5px
+            img
+                height: 80px
+                margin: 0 auto
+            p
+                font-size: .8em
+                padding: 0 1em
+
+    .owl-nav 
+        div 
+            margin-top: -26px
+            position: absolute
+            top: 50%
+            color: #cdcbcd
+        i 
+            font-size: 52px
+
+    .owl-nav .owl-prev 
+        left: -30px
+    .owl-nav .owl-next 
+        right: -30px
+    .owl-prev, .owl-next
+        position: absolute
+        top: 40%
+    .owl-dots
+        height: 0
+    
+
+
+/////
+//footer
+footer
+	text-align: center
+	background: $primary-blue
+	width: 100%
+	position: relative
+	color: white
+	padding-bottom: 20px
+	padding-top: 10vh	
+
+footer h3
+	font-size: 30px
+	padding: 20px
+	font-family: 'Josefin Sans', sans-serif
+
+footer i
+	color: white
+
+.fab 
+	font-size: 40px
+	padding: 10px 15px
+	transition: 1s
+
+.ex1 i:hover 
+  -moz-transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
+  -o-transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
+  -webkit-transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
+  transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
+  -moz-transform: scale(1.2)
+  -ms-transform: scale(1.2)
+  -webkit-transform: scale(1.2)
+  transform: scale(1.2)
+
 

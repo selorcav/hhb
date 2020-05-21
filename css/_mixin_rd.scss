@@ -28,6 +28,9 @@
     @media screen and (max-width: 1226px) and (min-width: 992px) { @content; }
   }
 
+  @mixin responsive-desk {
+    @media (min-width: 592px) and (max-width: 767px) { @content; }
+  }
 
 
 
