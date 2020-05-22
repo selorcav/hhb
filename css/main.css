@@ -613,21 +613,100 @@ main .container .push:hover:after {
 }
 
 .contact {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 50px 200px;
+  background: #fcfbfa;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact {
+    padding: 50px 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 50px 50px;
+  }
+}
+
+.contact .container {
+  background: #efefef;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 10px -1px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 10px -1px rgba(0, 0, 0, 0.25);
+}
+
+.contact .container textarea {
+  resize: none;
+}
+
+.contact .container h3::before {
+  position: absolute;
+  content: '';
+  height: 5px;
+  width: 80px;
+  background: #11202d;
+  top: 85px;
+}
+
+.contact .container .list-unstyled li {
+  display: inline-block;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact .container .list-unstyled li {
+    padding: 10px;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact .container .list-unstyled li p {
+    font-size: .8em;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact .container .list-unstyled li p {
+    font-size: .8em;
+    padding: 10px;
+  }
+}
+
+.contact .btn-content {
+  margin: 0 40%;
+}
+
+.contact .btn {
+  color: #11202d;
+  border: solid 1px #11202d;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contact .btn:hover {
+  color: #efefef;
+  background: #11202d;
 }
 
 footer {
+  margin: 0 !important;
   background: #11202d;
   width: 100%;
   position: relative;
   color: #efefef;
-  padding-bottom: 20px;
 }
 
 footer h3 {
-  font-size: 1.5em;
-  padding: 20px;
+  font-size: 1.2em;
+  padding: 20px 5px 10px;
   font-weight: 700;
+}
+
+footer p.text-right {
+  font-size: .8em;
 }
 
 footer i {
@@ -642,8 +721,8 @@ footer i:hover {
 }
 
 footer .fab {
-  font-size: 40px;
-  padding: 10px 15px;
+  font-size: 30px;
+  padding: 5px 5px;
   -webkit-transition: 1s;
   transition: 1s;
 }

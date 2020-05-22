@@ -381,21 +381,70 @@ main
 /////
 //Contact
 .contact
-    height: 100vh
+    min-height: 100vh
+    padding: 50px 200px
+    background: $secondary-white
+    +ipad-ipadpro
+        padding: 50px 100px
+    +for-ipad
+        padding: 50px 50px
+
+    .container
+        background: $primary-white
+        border-radius: 5px
+        box-shadow: 1px 1px 10px -1px rgba(0,0,0,0.25)
+
+        textarea
+            resize: none
+            
+        h3::before
+            position: absolute
+            content: ''
+            height: 5px 
+            width: 80px
+            background: $primary-blue
+            top: 85px
+
+        .list-unstyled
+            li 
+                display: inline-block
+                +ipad-ipadpro
+                    padding: 10px
+                    font-size: 1em
+                p
+                    +ipad-ipadpro
+                        font-size: .8em
+                        padding: 10px
+                    +for-ipad
+                        font-size: .8em
+                        padding: 10px 
+    .btn-content
+        margin: 0 40%
+    .btn
+        color: $primary-blue
+        border: solid 1px $primary-blue
+        transition: .5s
+        &:hover
+            color: $primary-white
+            background: $primary-blue
+
+
 
 
 /////
 //footer
 footer
+    margin: 0 !important
     background: $primary-blue
     width: 100%
     position: relative
     color: $primary-white
-    padding-bottom: 20px
     h3
-        font-size: 1.5em
-        padding: 20px
+        font-size: 1.2em
+        padding: 20px 5px 10px 
         font-weight: 700
+    p.text-right
+        font-size: .8em
     i
         color: $primary-white
         &:hover 
@@ -408,6 +457,6 @@ footer
             -webkit-transform: scale(1.2)
             transform: scale(1.2)
     .fab 
-        font-size: 40px
-        padding: 10px 15px
+        font-size: 30px
+        padding: 5px 5px
         transition: 1s
