@@ -18,13 +18,11 @@ $secondary-white: #fcfbfa
 
 html
     box-sizing: border-box
-
 body
     margin: 0
     padding: 0
     font-family: sans-serif
     color: $primary-blue
-
 h1, h2, h3, h4, h5, h6, p
     font-family: $font-opensans
 
@@ -32,25 +30,18 @@ h1, h2, h3, h4, h5, h6, p
 
 .primary-blue
     color: $primary-blue
-
 .secondary-blue
     color: $secondary-blue
-
 .primary-lightblue
     color: $primary-lightblue
-
 .secondary-lightblue
     color: $secondary-lightblue
-
 .primary-orange
     color: $primary-orange
-
 .secondary-orange
     color: $secondary-orange
-
 .primary-white
     color: $primary-white
-
 .secondary-white
     color: $secondary-white
 
@@ -59,15 +50,12 @@ h1, h2, h3, h4, h5, h6, p
 .primary-bg
     background: $primary-blue
     transition: .5s
-    
     .logo
         height: 80px
         line-height: 80px
-    
     a 
         &:hover
             background: rgba(255,255 ,255 ,.1 )
-
 header
     position: fixed
     top: 0
@@ -79,7 +67,6 @@ header
     z-index: 2
     +for-ipad
         padding: 0 20px
-    
     .logo
         color: $primary-white
         height: 100px
@@ -89,11 +76,9 @@ header
         +for-phone-only
             height: 85px
             line-height: 85px
-
         img
             height: inherit
             padding: 10px
-
     nav
         float: right 
         +for-ipad
@@ -103,7 +88,6 @@ header
             background: $primary-blue
             right: -100%
             transition: .5s
-
         ul
             margin: 0
             padding: 0
@@ -111,20 +95,17 @@ header
             +for-ipad 
                 display: block
                 text-align: center
-
         li
             list-style: none
             font-family: $font-roboto
             +for-ipad
                 border-bottom: 1px solid rgba( 0, 0, 0, .2)
-            
             .nav-logo
                 +for-ipad
                     display: block !important
                     width: 210px
                     margin: 0 auto
                     padding: 20px
-
             a 
                 font-size: 1em
                 height: 80px
@@ -149,12 +130,10 @@ header
                         background: $secondary-blue
     nav.active
         right: 0
-
     .hamburger 
         display: inline-block
         height: 26px
         margin-right: 27px
-        
         a.main-nav-toggle 
             display: block
             width: 30px
@@ -173,10 +152,8 @@ header
                 left: 0
                 right: 0
                 transition: all ease-out 0.3s
-
             &:after 
                 top: 100%
-            
             i 
                 display: block
                 text-indent: 100%
@@ -188,7 +165,6 @@ header
                 position: absolute
                 top: 50%
                 transition: all ease-out 0.1s
-
             &.active-menu 
                 &:after 
                     transform: rotate(-45deg)
@@ -200,7 +176,6 @@ header
                     top: 50%
                 i 
                     opacity: 0
-
     .menu-toggle
         z-index: 2
         cursor: pointer
@@ -215,12 +190,10 @@ main
     background-image: url("../img/bg-main.jpg")
     width: 100%
     background-position: center
-
     .container
         height: 100vh
         display: flex
         align-items: flex-end
-
         h1
             text-align: center
             color: $primary-white
@@ -233,8 +206,7 @@ main
             +for-ipad
                 font-size: 2em
             +for-phone-only
-                font-size: 1.5em
-            
+                font-size: 1.5em   
         .button
             margin: 0 auto
             border-radius: 35px
@@ -247,7 +219,6 @@ main
             text-decoration: none
             color: $primary-white
             z-index: 0
-
         .push 
             display: inline-block
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
@@ -274,7 +245,6 @@ main
                 transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1)
                 width: 50px
                 z-index: -10
-        
             &:hover:after 
                 left: 120%
                 transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1)
@@ -288,13 +258,11 @@ main
         padding: 50px
     +for-phone-only
         padding: 30px
-
     h1
         font-weight: 700
         font-size: 2em
         &:before 
-            content: ''
-          
+            content: ''    
     p
         font-size: 1.2em
         +ipad-ipadpro
@@ -302,20 +270,15 @@ main
         +for-ipad
             font-size: 1em
             margin-top: 1em !important
-
     .what-we-do-content
-        
         .d-flex
             +for-ipad 
                 display: block !important
-
         .col-md-6
             +for-phone-only
                 display: block !important
-
             img
                 position: absolute
-
             .floating
                 animation-name: floating
                 animation-duration: 3s
@@ -348,7 +311,6 @@ main
     .carousel-wrap 
         margin: 0px auto
         position: relative
-
     .owl-carousel
         .item 
             position: relative
@@ -365,7 +327,6 @@ main
             p
                 font-size: .8em
                 padding: 0 1em
-
     .owl-nav 
         div 
             margin-top: -26px
@@ -374,7 +335,6 @@ main
             color: #cdcbcd
         i 
             font-size: 52px
-
     .owl-nav .owl-prev 
         left: -30px
     .owl-nav .owl-next 
@@ -384,41 +344,70 @@ main
         top: 40%
     .owl-dots
         height: 0
-    
+
+/////
+//Services
+.services
+    padding: 100px
+    background: $primary-lightblue
+    background-image: url("../img/servicios-bg.svg")
+    background-size: cover
+    background-position: center
+    +for-ipad
+        background-position: right
+        padding: 50px 30px 30px
+    +for-phone-only
+        background-position: right
+        padding: 30px
+    h2::before
+        position: absolute
+        content: ''
+        height: 6px 
+        width: 80px
+        background: $primary-white
+        top: 45px
+        +for-phone-only
+            display: none
+    p
+        font-size: 1.2em
+        +for-ipad
+            font-size: 1em
+    img
+        +for-ipad
+            display: block
+            max-width: 70%
+            margin: 0 auto
+
+/////
+//Contact
+.contact
+    height: 100vh
 
 
 /////
 //footer
 footer
-	text-align: center
-	background: $primary-blue
-	width: 100%
-	position: relative
-	color: white
-	padding-bottom: 20px
-	padding-top: 10vh	
-
-footer h3
-	font-size: 30px
-	padding: 20px
-	font-family: 'Josefin Sans', sans-serif
-
-footer i
-	color: white
-
-.fab 
-	font-size: 40px
-	padding: 10px 15px
-	transition: 1s
-
-.ex1 i:hover 
-  -moz-transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
-  -o-transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
-  -webkit-transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
-  transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
-  -moz-transform: scale(1.2)
-  -ms-transform: scale(1.2)
-  -webkit-transform: scale(1.2)
-  transform: scale(1.2)
-
-
+    background: $primary-blue
+    width: 100%
+    position: relative
+    color: $primary-white
+    padding-bottom: 20px
+    h3
+        font-size: 1.5em
+        padding: 20px
+        font-weight: 700
+    i
+        color: $primary-white
+        &:hover 
+            -moz-transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
+            -o-transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
+            -webkit-transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
+            transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
+            -moz-transform: scale(1.2)
+            -ms-transform: scale(1.2)
+            -webkit-transform: scale(1.2)
+            transform: scale(1.2)
+    .fab 
+        font-size: 40px
+        padding: 10px 15px
+        transition: 1s
