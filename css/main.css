@@ -370,6 +370,15 @@ main .container .push:hover:after {
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+.content {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .what-we-do {
   padding: 100px;
   background-size: cover;
@@ -599,6 +608,7 @@ main .container .push:hover:after {
 }
 
 .services {
+  position: relative;
   min-height: 100vh;
   padding: 100px;
   background: #4db9a8;
