@@ -304,29 +304,51 @@ main
 
 //propuesta de valor
 .value-proposal
+    .col-lg-6
+        padding: 0
+
+    .card-value
+        box-shadow: 1px 1px 10px -1px rgba(0,0,0,0.25)
+        min-height: 300px
+        margin: 10px
+        padding: 10px
+        background: #fff
+        border-radius: 5px
+        border: solid 1px $primary-white
+        +for-phone-only
+            margin: 10px 0
+        .col-sm-3
+            +for-phone-only
+                display: flex
+                justify-content: center
+                align-items: center
+        p
+            font-size: 1em
+        img
+            +for-phone-only
+                height: 80px
+                margin: 0 auto
+
     h1
         text-align: center
     
     //owl-carousel
     .carousel-wrap 
-        margin: 0px auto
+        margin: 20px auto 0
         position: relative
     .owl-carousel
         .item 
             position: relative
             z-index: 100
             border-radius: 15px
-            height: 400px
+            height: 250px
             transition: .3s
             h3
                 font-size: 1.35em
                 padding: 0 5px
             img
-                height: 80px
+                height: 100px
                 margin: 0 auto
-            p
-                font-size: .8em
-                padding: 0 1em
     .owl-nav 
         div 
             margin-top: -26px
