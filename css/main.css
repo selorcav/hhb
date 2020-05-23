@@ -558,6 +558,7 @@ main .container .push:hover:after {
 }
 
 .services {
+  min-height: 100vh;
   padding: 100px;
   background: #4db9a8;
   background-image: url("../img/servicios-bg.svg");
@@ -613,8 +614,43 @@ main .container .push:hover:after {
 }
 
 .platform {
-  height: 100vh;
+  min-height: 100vh;
   background: #11202d;
+  padding: 30px;
+  padding-top: 100px;
+  background-size: cover;
+  background-image: url("../img/platform-bg.svg");
+}
+
+@media (max-width: 768px) {
+  .platform {
+    background-position: right;
+  }
+}
+
+.platform h3 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .platform h3 {
+    margin: 0 !important;
+  }
+}
+
+.platform img {
+  width: 80%;
+  float: right;
+}
+
+.platform p {
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .platform p {
+    font-size: 1em;
+  }
 }
 
 .contact {

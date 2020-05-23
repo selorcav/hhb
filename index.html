@@ -26,10 +26,10 @@
         <nav>
             <ul>
                 <li><img class="d-none nav-logo" src="img/logo-nav-02.svg" alt=""></li>
-                <li><a href="#"> Inicio </a></li>
-                <li><a href="#"> Servicios </a></li>
-                <li><a href="#"> Plataforma </a></li>
-                <li><a href="#"> Contacto </a></li>
+                <li><a href="#home"> Inicio </a></li>
+                <li><a href="#services"> Servicios </a></li>
+                <li><a href="#board"> Plataforma </a></li>
+                <li><a href="#contact"> Contacto </a></li>
             </ul>
         </nav>
         <div class="hamburger menu-toggle">
@@ -37,7 +37,7 @@
         </div>
     </header>
     <!-- banner -->
-    <main>
+    <main id='home'>
         <div class="container">
             <div class="main-content">
                 <h1 data-aos="fade-up"
@@ -112,8 +112,8 @@
         </div>
     </div>
     <!-- services -->
-    <div class="services">
-        <div data-aos="fade-up" data-aos-duration="1200" class="container">
+    <div id="services" class="services">
+        <div data-aos="fade-up" data-aos-duration="2000" class="container">
             <div class="row">
                 <div class="col-lg-7">
                     <h2 class="font-weight-bold primary-blue">Nuestros servicios</h2>
@@ -130,14 +130,28 @@
         </div>
     </div>
     <!-- platform -->
-    <div class="platform">
-        <div class="container">
-            
+    <div id="board" class="platform pb-5">
+        <div data-aos="fade-up" data-aos-duration="2000" class="container">
+            <h3 class="font-weight-bold mb-5 primary-white">Nuestra Plataforma</h3>
+            <div class="row d-flex flex-row-reverse">
+                <div class="col-md-6 p-5">
+                    <img src="img/plataforma.svg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <p class="primary-white">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias numquam quo aspernatur repellat voluptatum. Minus
+                        incidunt quaerat ea ducimus! Consectetur ea facilis sequi consequatur delectus magnam, a eligendi. Sit voluptates
+                        asperiores nam perferendis illum nemo quisquam optio voluptate eligendi hic iste recusandae doloribus totam, in quia
+                        iusto inventore reiciendis nesciunt.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <div id="contacto" class="contact ">
-        <div data-aos="fade-right" class="container px-5 pt-5 pb-3">
+    <div id="contact" class="contact ">
+        <div data-aos="fade-right" data-aos-duration="1600" class="container px-5 pt-5 pb-3">
             <h3 class="font-weight-bold mb-4">Contacto</h3>
             <p>Encuéntranos en nuestras redes o ponte en contacto con nosotros.</p>
             <!--Section: Contact v-->

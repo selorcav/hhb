@@ -348,6 +348,7 @@ main
 /////
 //Services
 .services
+    min-height: 100vh
     padding: 100px
     background: $primary-lightblue
     background-image: url("../img/servicios-bg.svg")
@@ -380,8 +381,27 @@ main
 /////
 //platform
 .platform
-    height: 100vh
+    min-height: 100vh
     background: $primary-blue
+    padding: 30px
+    padding-top: 100px
+    background-size: cover
+    background-image: url("../img/platform-bg.svg")
+    +for-ipad
+        background-position: right
+
+    h3
+        text-align: center
+        +for-ipad
+            margin: 0 !important
+    img
+        width: 80%
+        float: right
+    p 
+        font-size: 1.2em
+        +for-ipad
+            font-size: 1em
+    
 
 
 
