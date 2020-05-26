@@ -273,7 +273,8 @@ header .menu-toggle {
 
 main {
   height: 100vh;
-  background-image: url("../img/bg-main.jpg");
+  background-image: url("../img/banner.svg");
+  background-size: cover;
   width: 100%;
   background-position: center;
 }
