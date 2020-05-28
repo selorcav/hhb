@@ -47,6 +47,10 @@ h1, h2, h3, h4, h5, h6, p {
   color: #fcfbfa;
 }
 
+.secondary-white-bg {
+  background: #fcfbfa;
+}
+
 .primary-bg {
   background: #11202d;
   -webkit-transition: .5s;
@@ -708,7 +712,6 @@ main .container .push:hover:after {
 .contact {
   min-height: 100vh;
   padding: 50px 200px;
-  background: #fcfbfa;
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

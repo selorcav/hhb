@@ -17,14 +17,6 @@ $primary-white: #efefef
 $secondary-white: #fcfbfa
 
 
-primary, #11202d
- secondary, #2f5c67
-  accent,
-   error,
-    info,
-     success, 
-      warning
-
 html
     box-sizing: border-box
 body
@@ -53,6 +45,11 @@ h1, h2, h3, h4, h5, h6, p
     color: $primary-white
 .secondary-white
     color: $secondary-white
+
+//backgrounds colors
+
+.secondary-white-bg
+    background: $secondary-white
 
 /////
 //nav
@@ -441,21 +438,12 @@ main
         font-size: 1.2em
         +for-ipad
             font-size: 1em
-    
-
-
-
-
-
-
-
 
 /////
 //Contact
 .contact
     min-height: 100vh
     padding: 50px 200px
-    background: $secondary-white
     +ipad-ipadpro
         padding: 50px 100px
     +for-ipad
