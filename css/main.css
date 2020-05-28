@@ -673,7 +673,6 @@ main .container .push:hover:after {
   min-height: 100vh;
   background: #11202d;
   padding: 30px;
-  padding-top: 100px;
   background-size: cover;
   background-image: url("../img/platform-bg.svg");
 }
@@ -709,20 +708,50 @@ main .container .push:hover:after {
   }
 }
 
+.about-us {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.about-us .about-us_photo {
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: solid 3px #11202d;
+}
+
+.about-us h3 {
+  font-size: 2em;
+}
+
+.about-us h4 {
+  font-size: 1.5em;
+}
+
+.about-us p {
+  font-size: 1.2em;
+}
+
+@media (max-width: 599px) {
+  .about-us p {
+    font-size: 1em;
+  }
+}
+
 .contact {
   min-height: 100vh;
-  padding: 50px 200px;
+  padding: 100px 200px 50px;
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .contact {
-    padding: 50px 100px;
+    padding: 100px;
   }
 }
 
 @media (max-width: 768px) {
   .contact {
-    padding: 50px 20px;
+    padding: 100px 20px 50px;
   }
 }
 

@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6, p
 .secondary-white-bg
     background: $secondary-white
 
+
 /////
 //nav
 .primary-bg
@@ -421,7 +422,6 @@ main
     min-height: 100vh
     background: $primary-blue
     padding: 30px
-    padding-top: 100px
     background-size: cover
     background-image: url("../img/platform-bg.svg")
     +for-ipad
@@ -439,15 +439,35 @@ main
         +for-ipad
             font-size: 1em
 
+//////
+//about-us
+.about-us
+    padding-top: 100px
+    min-height: 100vh
+    .about-us_photo
+        width: 100%
+        border-radius: 50%
+        overflow: hidden
+        border: solid 3px $primary-blue
+    h3
+        font-size: 2em
+
+    h4 
+        font-size: 1.5em
+    p
+        font-size: 1.2em
+        +for-phone-only
+            font-size: 1em
+
 /////
 //Contact
 .contact
     min-height: 100vh
-    padding: 50px 200px
+    padding: 100px 200px 50px
     +ipad-ipadpro
-        padding: 50px 100px
+        padding: 100px
     +for-ipad
-        padding: 50px 20px
+        padding: 100px 20px 50px
 
     .container
         background: $primary-white
