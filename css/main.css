@@ -276,7 +276,8 @@ header .menu-toggle {
 }
 
 main {
-  height: 100vh;
+  padding-top: 100px;
+  min-height: 100vh;
   background-image: url("../img/banner.svg");
   background-size: cover;
   width: 100%;
@@ -675,6 +676,7 @@ main .container .push:hover:after {
   padding: 30px;
   background-size: cover;
   background-image: url("../img/platform-bg.svg");
+  padding-top: 100px;
 }
 
 @media (max-width: 768px) {
