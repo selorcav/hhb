@@ -193,6 +193,7 @@ header
 /////
 //banner
 main 
+    position: relative
     height: 100vh
     background-image: url("../img/banner.svg")
     background-size: cover
@@ -256,6 +257,27 @@ main
             &:hover:after 
                 left: 120%
                 transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1)
+
+.bg-banner
+    position: absolute
+    height: 100vh
+    background-image: url("../img/banner-01.svg")
+    background-size: cover
+    width: 100%
+    background-position: center
+    opacity: 0
+    animation-name: background-banner
+    animation-duration: 5s
+    animation-iteration-count: infinite
+
+@keyframes background-banner
+    0%
+        opacity: 0
+    50%
+        opacity: 1
+    100%
+        opacity: 0
+
 
 .content
     margin: 0

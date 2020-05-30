@@ -276,6 +276,7 @@ header .menu-toggle {
 }
 
 main {
+  position: relative;
   height: 100vh;
   background-image: url("../img/banner.svg");
   background-size: cover;
@@ -373,6 +374,46 @@ main .container .push:hover:after {
   left: 120%;
   -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.bg-banner {
+  position: absolute;
+  height: 100vh;
+  background-image: url("../img/banner-01.svg");
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  opacity: 0;
+  -webkit-animation-name: background-banner;
+          animation-name: background-banner;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes background-banner {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes background-banner {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .content {
